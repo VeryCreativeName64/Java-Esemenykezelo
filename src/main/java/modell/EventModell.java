@@ -1,3 +1,5 @@
+package modell;//kész
+
 import java.util.Date;
 
 public class EventModell {

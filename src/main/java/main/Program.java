@@ -1,3 +1,8 @@
+package main;//kész
+
+import controller.EventController;
+import view.EventView;
+
 public class Program {
     public static void main(String[] args) {
         EventView view = new EventView();

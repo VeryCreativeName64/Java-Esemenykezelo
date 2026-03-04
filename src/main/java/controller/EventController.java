@@ -1,3 +1,8 @@
+package controller;//kész
+
+import modell.EventModell;
+import view.EventView;
+
 import java.util.*;
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -18,7 +23,6 @@ public class EventController {
             while ((sor = br.readLine()) != null) {
                 String[] p = sor.split(";");
                 int id = Integer.parseInt(p[0]);
-                // Duplikáció szűrése [cite: 9]
                 if (lista.stream().anyMatch(e -> e.getId() == id)) continue;
 
                 lista.add(new EventModell(id, p[1], p[2], p[3], df.parse(p[4]), Boolean.parseBoolean(p[5])));

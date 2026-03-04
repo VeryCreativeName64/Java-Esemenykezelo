@@ -1,3 +1,5 @@
+package view;//kész
+
 import java.util.Scanner;
 
 public class EventView {
